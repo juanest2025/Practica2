@@ -20,10 +20,10 @@ int main() {
     cin >> cadena;
 
     int longitud = longitudCadena(cadena);
-    int faltante = n - (longitud % n);
+    int faltante = n - (longitud % n); //calcula cuantos ceros hga
     if (faltante == n) faltante = 0; //si ya multiplo no se rellenar
 
-    //crear una nueva cadena con ceros a la izquierda si es necesario
+    //crea una nueva cadena con ceros a la izquierda si es necesario
     char completa[120];
     int j = 0;
 
@@ -35,7 +35,7 @@ int main() {
     }
     completa[j] = '\0'; //marca fin de cadena
 
-    // Procesar en grupos de n
+    //procesa en grupos de n
     int suma = 0;
     for (int i = 0; i < j; i += n) {
         int numero = 0;
