@@ -4,5 +4,5 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-    3_1.cpp \
+    3_17.cpp \
     arduino.cpp
